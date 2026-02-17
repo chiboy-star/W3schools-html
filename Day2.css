@@ -1,0 +1,78 @@
+body {
+  background-color: powderblue;
+  background-image: url('tumblr_ku2pvuJkJG1qz9qooo1_r1_400.webp');
+  background-repeat: no-repeat;
+    background-size: cover;
+      background-attachment: fixed;
+
+}
+h1 {
+  color: red;
+  border: 2px solid blue;
+  margin: 50px;
+  padding: 30px;
+  text-align: center;
+  font-family: verdana;
+  font-size: 300%;
+}
+p {
+  color: red;
+  border: 2px solid blue;
+  margin: 50px;
+  padding: 30px;
+  text-align: center;
+  font-family: verdana;
+  font-size: 300%;
+}
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+th, td {
+  background-color: #96D4D4;
+}
+th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+table {
+  border-spacing: 30px;
+}
