@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.-->
+<head>
+    <!--Define the character set used:-->
+    <meta charset="UTF-8">
+    <!--Define a description of your web page:-->
+<meta name="description" content="Free Web tutorials">
+<!--Define keywords for search engines:-->
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<!--Define the author of a page:-->
+<meta name="author" content="John Doe">
+<!--Setting the viewport to make your website look good on all devices:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Refresh document every 30 seconds:-->
+    <meta http-equiv="refresh" content="30">
+    <!--The <title> element defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab-->
+    <title>Document</title>
+    <!--The <style> element is used to define style information for a single HTML page:-->
+    <style>
+  body {background-color: powderblue;}
+  h1 {color: red;}
+  p {color: blue;}
+</style>
+<!--The <link> element defines the relationship between the current document and an external resource-->
+<link rel="stylesheet" href="mystyle.css">
+<!--The <script> element is used to define client-side JavaScripts.-->
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+</script>
+</head>
+<body>
+<!--
+<header> - Defines a header for a document or a section
+<nav> - Defines a set of navigation links
+<section> - Defines a section in a document
+<article> - Defines independent, self-contained content
+<aside> - Defines content aside from the content (like a sidebar)
+<footer> - Defines a footer for a document or a section
+<details> - Defines additional details that the user can open and close on demand
+<summary> - Defines a heading for the <details> element    
+-->
+    <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+<header><h1>My Website</h1></header>
+
+<section>
+  <article>
+    <h2>Article Title</h2>
+    <p>This is a paragraph inside an article, which is inside a section.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Copyright 2026</p>
+</footer>
+<!--Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones):-->
+<h1 style="font-size:5vw;">Welcome to My Page</h1>
+
+<img style="max-width:100%;height:auto;" src="img_girl.jpg" alt="Girl in a jacket">
+
+<p>Resize the browser wi
+</body>
+</html>
