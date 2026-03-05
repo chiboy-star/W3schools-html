@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Apex Physio - Move Without Pain</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#11d462",
+                        "primary-dark": "#0ea64d",
+                        "primary-light": "#dcfce7",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#102218",
+                        "surface-light": "#ffffff",
+                        "text-main": "#111814",
+                        "text-muted": "#618972",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "sans": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main font-display antialiased overflow-x-hidden">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-[#f0f4f2] transition-all">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<!-- Logo -->
+<div class="flex items-center gap-3">
+<div class="size-8 text-primary">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="text-xl font-extrabold tracking-tight text-[#111814]">Apex Physio</span>
+</div>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-sm font-medium text-[#111814] hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium text-[#618972] hover:text-primary transition-colors" href="#">About</a>
+<a class="text-sm font-medium text-[#618972] hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-medium text-[#618972] hover:text-primary transition-colors" href="#">Blog</a>
+<a class="text-sm font-medium text-[#618972] hover:text-primary transition-colors" href="#">Shop</a>
+</nav>
+<!-- CTA Button -->
+<div class="hidden md:block">
+<button class="bg-primary hover:bg-primary-dark text-[#111814] text-sm font-bold py-2.5 px-6 rounded-lg transition-colors shadow-sm">
+                        Book Appointment
+                    </button>
+</div>
+<!-- Mobile Menu Button -->
+<button class="md:hidden p-2 text-[#111814]">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative pt-12 pb-16 lg:pt-20 lg:pb-24 overflow-hidden">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+<!-- Text Content -->
+<div class="flex-1 max-w-2xl text-center lg:text-left">
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-[#111814] leading-[1.1] tracking-tight mb-6">
+                        Move Without Pain.<br/>
+<span class="text-primary relative inline-block">
+                            Get Back to Life.
+                            <svg class="absolute w-full h-3 bottom-1 left-0 text-primary/20 -z-10" preserveaspectratio="none" viewbox="0 0 100 10">
+<path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" stroke-width="8"></path>
+</svg>
+</span>
+</h1>
+<p class="text-lg text-[#618972] mb-8 font-medium max-w-lg mx-auto lg:mx-0">
+                        World-class physiotherapy care now available in Lekki Phase 1 and Ikeja GRA, Lagos. Expert treatment tailored to your recovery.
+                    </p>
+<div class="flex flex-wrap justify-center lg:justify-start gap-4">
+<button class="bg-primary hover:bg-primary-dark text-[#111814] text-base font-bold py-3.5 px-8 rounded-lg shadow-lg shadow-primary/20 transition-all hover:-translate-y-0.5">
+                            Book Your Session
+                        </button>
+<button class="bg-white border border-[#e0e6e3] hover:bg-[#f0f4f2] text-[#111814] text-base font-bold py-3.5 px-8 rounded-lg transition-colors">
+                            Explore Services
+                        </button>
+</div>
+<div class="mt-10 flex items-center justify-center lg:justify-start gap-6 text-sm text-[#618972]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<span>Licensed Therapists</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<span>Modern Equipment</span>
+</div>
+</div>
+</div>
+<!-- Hero Image -->
+<div class="flex-1 w-full relative">
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10"></div>
+<div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] w-full">
+<img alt="Physiotherapist assisting a patient with leg exercises in a modern gym" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIPKB_TeBxM5hN2CYQLRTNMmcl8VVdzdYmF5EjjcOB3A4hrVD1_GWHobnQSEYF_8fAeHLTP9ZkFxXKBNqj3dZpTbyVjkP_ECDKgrgBjHqM6VQ5fsLOVZV4ldWPV7dGgLCJrrpT2wIEk7wJC01Gv_Tw_SOgXpva5RNurhdjapbqZ10rWw3fjt7eXcw-f-1DPOTqzYSuQzDk91-_nNgkzFL011JKN4G8z1QdBOyTd58k09JB78bnclEtEL_f5p4YO5dSgKLsdRnZcQNt"/>
+<!-- Floating Badge -->
+<div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur p-4 rounded-xl shadow-lg border border-white/50 max-w-[200px]">
+<div class="flex items-center gap-3 mb-2">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-gray-200 border-2 border-white overflow-hidden">
+<img alt="Avatar 1" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0uGFD_AUbLXWVHEmRQrldGgWy9sVs4RWJqVNKPIVE9sgwvvM4utZw29GzqVoxCpD4TXILbOHVkMUlN6GAYp9-jDtSGQ9jO_TD4KNiNNJp0rbDzoHTL13jSovIvAUFUfYKQ5F5SLuvx7_bEah1snRBzodlPlwJgvTcXGEWDx-4ZOX_Y6KKwx5OBJjkOZN7JfXxeBJn68khtT7ODFWOYTaRuNAhjOa4sIg8z64tPCctcm6zX6PAHlgk92sT0oLE6mPaSn8r5rj87Gnt"/>
+</div>
+<div class="w-8 h-8 rounded-full bg-gray-200 border-2 border-white overflow-hidden">
+<img alt="Avatar 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYtfbTDCKxWIMCgHwvVkU_aVSA4lgJsU5ud6dkT9RcyLgB0lrzt1S5l3GH-3vo23PdOEOwx6moQjr118c8pTm00O_rl2tqY5YEPb5ul979SKlmfUZJO4LC1wgd7UuBo7NJkRtHhkKKHuUULYO9Wtegc0q3XjaynLVTgqZO4ySlIKkJdJycrUzhnPlrfPx1Ld74d4upbD4Xi3_h36-UL-cZBTbiNk0PGkswEh9SeaNIPAU5SujwFPOj6tpys2QgmEBnQJr1P07Xzlmz"/>
+</div>
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-[10px] font-bold text-white border-2 border-white">
+                                        +5k
+                                    </div>
+</div>
+</div>
+<p class="text-xs font-semibold text-[#111814]">Happy patients recovered this year</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Locations Section -->
+<section class="py-12 bg-white border-y border-[#f0f4f2]">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row gap-6">
+<!-- Location 1 -->
+<div class="flex-1 bg-background-light rounded-xl p-6 flex items-start gap-4 transition-transform hover:scale-[1.01]">
+<div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden bg-gray-200">
+<img alt="Exterior of Lekki Phase 1 Clinic building" class="w-full h-full object-cover" data-location="Lagos" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqULKFmTnk-llraCR2u1NV15v7WYaz16Lf9S5aqXdhboT-HV4TtoaosyYIUVoUp0a4e0nfybQ4jamQpvAQlyT7UqEs4rUmE41rXRhFj7rbnvkQb7OVQIkVhKt81IrZyDbH8qLxeoEJeDOALHAazc-2jWeUE_xfTlV58LdTTlx64RfJ7J0owA0LAD8_ABasvBSk822WUotrAnOC-72LXQJt6oAwvdhYRIG9O2KrjAviEaIfuSuQVDtfV3khLa62M_3lSGaAare7-rQ2"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-lg text-[#111814]">Lekki Phase 1</h3>
+<span class="bg-primary/10 text-primary-dark text-xs font-bold px-2 py-1 rounded">Open Now</span>
+</div>
+<p class="text-[#618972] text-sm mb-4 leading-relaxed">12 Admiralty Way, Lekki Phase 1, Lagos<br/>Mon - Sat: 8:00 AM - 7:00 PM</p>
+<a class="text-sm font-bold text-[#111814] flex items-center gap-1 hover:text-primary transition-colors group" href="#">
+                            Get Directions 
+                            <span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Location 2 -->
+<div class="flex-1 bg-background-light rounded-xl p-6 flex items-start gap-4 transition-transform hover:scale-[1.01]">
+<div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden bg-gray-200">
+<img alt="Modern glass building facade of Ikeja GRA Clinic" class="w-full h-full object-cover" data-location="Lagos" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0-fMmTjabPqoioVAusR-UHdKIFCUXP5q2CZPbh-3A4kO9sg8CakfcpgndADbsj8QpKVRjWk0XZD_hHT_LdXAtlKK_pkTzl4lAgJa3Vxrlj2_N8fdLIf4AyDdnUpJ7Q8SZDPT6iiKHuRQxrQxtqqnaNc7lrh0NRs0a8WhirHC8oQa7aNRQ5b5OCatpWcUoPoN5H4IgC4cmhAxiGo8yTKv2JJ90r_J1qdNRSrw6uHYLI8-IZVEcUWyD1SzLxMd0EsG-Xxwuxi12Xu2G"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-lg text-[#111814]">Ikeja GRA</h3>
+<span class="bg-primary/10 text-primary-dark text-xs font-bold px-2 py-1 rounded">Open Now</span>
+</div>
+<p class="text-[#618972] text-sm mb-4 leading-relaxed">45 Isaac John Street, Ikeja GRA, Lagos<br/>Mon - Sat: 9:00 AM - 6:00 PM</p>
+<a class="text-sm font-bold text-[#111814] flex items-center gap-1 hover:text-primary transition-colors group" href="#">
+                            Get Directions 
+                            <span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-20 bg-background-light">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="text-primary font-bold text-sm tracking-wider uppercase mb-2 block">Our Expertise</span>
+<h2 class="text-3xl md:text-4xl font-black text-[#111814] mb-4">Comprehensive Care Services</h2>
+<p class="text-[#618972]">We combine manual therapy with the latest rehabilitation technology to treat the root cause of your pain.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Service Card 1 -->
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[32px]">sports_gymnastics</span>
+</div>
+<h3 class="font-bold text-xl text-[#111814] mb-3">Sports Rehab</h3>
+<p class="text-[#618972] text-sm leading-relaxed mb-4">Specialized recovery programs for athletes to return to peak performance quickly and safely.</p>
+<a class="text-primary font-bold text-sm hover:underline" href="#">Learn more</a>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[32px]">accessibility_new</span>
+</div>
+<h3 class="font-bold text-xl text-[#111814] mb-3">Manual Therapy</h3>
+<p class="text-[#618972] text-sm leading-relaxed mb-4">Hands-on techniques including mobilization and manipulation to reduce pain and restore motion.</p>
+<a class="text-primary font-bold text-sm hover:underline" href="#">Learn more</a>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[32px]">self_improvement</span>
+</div>
+<h3 class="font-bold text-xl text-[#111814] mb-3">Post-Op Care</h3>
+<p class="text-[#618972] text-sm leading-relaxed mb-4">Structured rehabilitation plans following orthopedic surgeries to regain strength.</p>
+<a class="text-primary font-bold text-sm hover:underline" href="#">Learn more</a>
+</div>
+<!-- Service Card 4 -->
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[32px]">chair</span>
+</div>
+<h3 class="font-bold text-xl text-[#111814] mb-3">Ergonomics</h3>
+<p class="text-[#618972] text-sm leading-relaxed mb-4">Workplace assessments and posture correction to prevent chronic strain injuries.</p>
+<a class="text-primary font-bold text-sm hover:underline" href="#">Learn more</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Meet the Lead Physio -->
+<section class="py-20 bg-white">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="w-full lg:w-1/2 relative order-2 lg:order-1">
+<div class="absolute inset-0 bg-primary/10 rounded-2xl transform translate-x-4 translate-y-4"></div>
+<img alt="Portrait of Dr. Chigozie wearing a white coat and smiling confidently" class="relative rounded-2xl w-full aspect-[4/5] object-cover shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZL8d189uQ_rAvtIDQGCXBNp_VYLfYeURBxN13fEMtdPGwITkWLdvVON9yOTwIk81-0M5fMb6Ff7iBP49X0WE3SqVy6GyLdbX0dvSsaXtyDg5zyFNlMmTlQqaJ3Wbr_wwfsjaO0Wnp_kAF7TI02Ix80xBdFNpkklldHe-0S39gKRssx-6-tfcpz4RhJ7Hadb1BY_uOzv4PWKQroqrLdyZ5tkzpvLUhPnLaRoFo4k_rLOuxrd8Yd_r-I1yTBiQOwcUT5b2xpNBpe9sw"/>
+</div>
+<div class="w-full lg:w-1/2 order-1 lg:order-2">
+<span class="text-primary font-bold text-sm tracking-wider uppercase mb-2 block">Lead Physiotherapist</span>
+<h2 class="text-3xl md:text-4xl font-black text-[#111814] mb-6">Meet Dr. Chigozie</h2>
+<p class="text-lg text-[#618972] mb-6 font-medium">"My goal is not just to treat your pain, but to educate you on how to prevent it from coming back."</p>
+<p class="text-[#618972] mb-8 leading-relaxed">
+                        With over 15 years of clinical experience in sports medicine and orthopedics, Dr. Chigozie leads our team of specialists. He holds a Doctorate in Physical Therapy and has worked with top athletes across Nigeria. His approach combines evidence-based practice with a compassionate understanding of each patient's unique journey.
+                    </p>
+<div class="grid grid-cols-2 gap-6 mb-8">
+<div>
+<h4 class="text-3xl font-black text-[#111814]">15+</h4>
+<p class="text-sm text-[#618972]">Years Experience</p>
+</div>
+<div>
+<h4 class="text-3xl font-black text-[#111814]">5k+</h4>
+<p class="text-sm text-[#618972]">Patients Treated</p>
+</div>
+</div>
+<button class="flex items-center gap-2 text-[#111814] font-bold border-b-2 border-primary pb-1 hover:text-primary transition-colors">
+                        Read Full Bio
+                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-20 bg-background-light">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-[#102218] rounded-3xl p-8 md:p-16 relative overflow-hidden">
+<!-- Background Pattern -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+<div class="relative z-10 max-w-4xl mx-auto text-center">
+<div class="text-primary mb-6">
+<span class="material-symbols-outlined text-6xl">format_quote</span>
+</div>
+<h2 class="text-2xl md:text-4xl font-bold text-white mb-8 leading-tight">
+                        "I had chronic back pain for years. After just 4 weeks at Apex Physio Lekki, I'm back to running 5ks every weekend. The team is incredibly professional and supportive."
+                    </h2>
+<div class="flex items-center justify-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-primary">
+<img alt="Portrait of happy patient Sarah A." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgEkSv7n1Fv60IHkRN2e2nFLIbaZap1sHYvR9Okwh1XRTEbHM9I1zMd4bMmAfV2V4h1DKkEDKaJgNRSPSXYyQ7nZw4cai4y10i7BQjvbWMRpFknubnD5VnBzGhzXssuydS7TLvolHYalBeIl6T9Sye1YCwbdxVHwM-GdzkLa62FO_ZdCl24NfB08MOZMf6EuBTDkJdLLgiDa1_rSccAW_ptmeUqTiJDNnw6JIQv6f5HKuPSp9B7UFNizECfBDx0s8VuHgPwU2wH_vj"/>
+</div>
+<div class="text-left">
+<p class="text-white font-bold">Sarah A.</p>
+<p class="text-gray-400 text-sm">Lekki Branch Patient</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Blog Preview -->
+<section class="py-20 bg-white">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-end mb-12">
+<div>
+<span class="text-primary font-bold text-sm tracking-wider uppercase mb-2 block">Health Tips</span>
+<h2 class="text-3xl md:text-4xl font-black text-[#111814]">Latest from the Blog</h2>
+</div>
+<a class="hidden md:block text-[#111814] font-bold hover:text-primary transition-colors" href="#">View all articles</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Blog Card 1 -->
+<article class="flex flex-col group cursor-pointer">
+<div class="rounded-xl overflow-hidden mb-4 relative h-60">
+<img alt="Woman stretching her back outdoors during sunrise" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFSafPFdr9sdf-IxIuPtEs4qr8H0YNRSKdtbmtntSUOwMHeh0bXfdDVPfeeP4uMVdcNB2BZW3oHyHQEcDbx_2i4zOHum_82ZBoABkQKsFXZ_TKu2wPesgQ3l9saT6xkl1_SVQucsf_5l5-24u-gZy9MUp-q7uFh59BIGNOc5ryNoVtbbVPbRincNO78qil_f5Q5H4xtGbVX0Qo8j4Q7swmQiZenHbIxKNKqKp6_l8gYtpxmY_oBn17jCYUEKNvmeNuf-FB0KfMONTw"/>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-xs font-bold text-[#111814]">Rehab</div>
+</div>
+<p class="text-sm text-[#618972] mb-2">October 24, 2023</p>
+<h3 class="text-xl font-bold text-[#111814] mb-3 group-hover:text-primary transition-colors">5 Simple Stretches for Lower Back Pain Relief</h3>
+<p class="text-[#618972] text-sm line-clamp-2 mb-4">Discover effective daily movements that can help alleviate chronic tension in your lumbar region.</p>
+<span class="text-primary font-bold text-sm flex items-center gap-1 mt-auto">
+                        Read Article <span class="material-symbols-outlined text-[16px]">arrow_right_alt</span>
+</span>
+</article>
+<!-- Blog Card 2 -->
+<article class="flex flex-col group cursor-pointer">
+<div class="rounded-xl overflow-hidden mb-4 relative h-60">
+<img alt="Man jogging in a park with proper running form" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2lH8bNCaPolmIGwvrVYfUQGbjUG3--mx_NYmsH5fZHQ9AeVhI2smegIKyfJ82o3qM34BxuRtgH79RI3vp_PJx3lylylOyR_T8llaVsAulUWTre4-T7WwzR4SIjYpl51ndfNBhjLdv768Ri_K67ktiHFNPgQ-Z1dkkZpowMBV-hUDb2IiuHVQzFg1HnDcz1Cixua-lJ2J6WAL2yzrmIUcSNBSWjAwkQ45aZ4Zkq9CKBzA6cZaD5y-xIKJP0kyVSe0lnNYYjd-6ek-Z"/>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-xs font-bold text-[#111814]">Running</div>
+</div>
+<p class="text-sm text-[#618972] mb-2">October 18, 2023</p>
+<h3 class="text-xl font-bold text-[#111814] mb-3 group-hover:text-primary transition-colors">How to Prevent Runner's Knee</h3>
+<p class="text-[#618972] text-sm line-clamp-2 mb-4">Essential tips on form, footwear, and strengthening exercises to keep you on the track pain-free.</p>
+<span class="text-primary font-bold text-sm flex items-center gap-1 mt-auto">
+                        Read Article <span class="material-symbols-outlined text-[16px]">arrow_right_alt</span>
+</span>
+</article>
+<!-- Blog Card 3 -->
+<article class="flex flex-col group cursor-pointer">
+<div class="rounded-xl overflow-hidden mb-4 relative h-60">
+<img alt="Bowl of healthy salad ingredients representing nutrition" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2i8W9iWLAVcW5AJIaqWHENLKTpDlqBIOCN1EUadCGm1-205LZvr02MzEyqIsf2u6YffTj9zAC5Cz0fkosLGrnChQG8TR7_My0qRafUKAnTE7YPNe_Erzw6nxDh8jKZESp4i3SsyJ927fVJ7fRyD-PTGTnVpAzg9ElMIkzkIekXxzliv0GO4OMMYAx08lDflfrcEa58v1Z61eC9pc2iSh7LY_FFqO-1aAK0ZTXgqDdXS3q54U1GOtP5B-dRYrmGPTEImW55lHn5_Ij"/>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-xs font-bold text-[#111814]">Nutrition</div>
+</div>
+<p class="text-sm text-[#618972] mb-2">October 10, 2023</p>
+<h3 class="text-xl font-bold text-[#111814] mb-3 group-hover:text-primary transition-colors">The Role of Nutrition in Injury Recovery</h3>
+<p class="text-[#618972] text-sm line-clamp-2 mb-4">What you eat plays a huge role in how fast your body heals. Here are the top foods to include.</p>
+<span class="text-primary font-bold text-sm flex items-center gap-1 mt-auto">
+                        Read Article <span class="material-symbols-outlined text-[16px]">arrow_right_alt</span>
+</span>
+</article>
+</div>
+<div class="md:hidden mt-8 text-center">
+<a class="text-[#111814] font-bold hover:text-primary transition-colors" href="#">View all articles</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#102218] text-white pt-20 pb-10">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<!-- Brand Info -->
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<div class="size-8 text-primary">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="text-2xl font-bold">Apex Physio</span>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed">
+                        Helping you move better, feel stronger, and live without pain. The premier physiotherapy clinic in Lagos.
+                    </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-[#102218] transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">social_leaderboard</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-[#102218] transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">photo_camera</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-[#102218] transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div>
+<h3 class="text-lg font-bold mb-6">Quick Links</h3>
+<ul class="flex flex-col gap-3 text-sm text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Our Services</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Specialists</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Success Stories</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<!-- Contact -->
+<div>
+<h3 class="text-lg font-bold mb-6">Our Locations</h3>
+<div class="flex flex-col gap-6 text-sm text-gray-400">
+<div>
+<p class="text-white font-semibold mb-1">Lekki Phase 1</p>
+<p>12 Admiralty Way, Lekki</p>
+<p class="mt-1">+234 800 123 4567</p>
+</div>
+<div>
+<p class="text-white font-semibold mb-1">Ikeja GRA</p>
+<p>45 Isaac John Street, Ikeja</p>
+<p class="mt-1">+234 800 765 4321</p>
+</div>
+</div>
+</div>
+<!-- Newsletter -->
+<div>
+<h3 class="text-lg font-bold mb-6">Stay Updated</h3>
+<p class="text-sm text-gray-400 mb-4">Subscribe for health tips and clinic updates.</p>
+<form class="flex flex-col gap-3">
+<input class="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-gray-600" placeholder="Your email address" type="email"/>
+<button class="bg-primary hover:bg-primary-dark text-[#111814] font-bold py-3 px-4 rounded-lg text-sm transition-colors" type="submit">
+                            Subscribe
+                        </button>
+</form>
+</div>
+</div>
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+<p>© 2024 Apex Physio. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
